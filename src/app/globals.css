@@ -2,26 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@layer components {
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+    .title {
+        @apply text-6xl font-bold text-blue-300;
+    }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    .title span {
+        position: relative;
+        z-index: 10
+    }
+    .title span:after {
+        content: "";
+        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='333' height='41' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 25c64.966-11.94 219.119-29.413 316-3.793m0-.18c-42.008-.281-136.219 1.52-177 10.973' stroke='%23E3DCFF' stroke-width='16' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: -26px;
+        width: 100%;
+        z-index: -10
+    }
+
 }
