@@ -3,11 +3,11 @@ import Image from 'next/image'
 export default function Home() {
     return (
         <>
-            <div className="flex flex-col text-center justify-center space-y-12">
+            <div className="flex flex-col text-center justify-center lg:space-y-12">
                 <div className="w-full text-center flex justify-center">
                     <Image src="/avatar.webp" alt="me" height="172" width="172" className="select-none"></Image>
                 </div>
-                <div className="space-y-8 w-6/12 mx-auto">
+                <div className="space-y-8 lg:w-6/12 mx-auto">
                     <h3 className="text-gray-400 text-xl leading-snug uppercase robotoMono">Ravan Babayev</h3>
                     <h1 className="title">FULLSTACK DEVELOPER</h1>
                 </div>
