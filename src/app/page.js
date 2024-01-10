@@ -2,10 +2,7 @@ import Image from 'next/image'
 
 export default function Home() {
     return (
-        <div className="">
-            <head>
-                <title>Ravan Babayev</title>
-            </head>
+        <>
             <div className="flex flex-col text-center justify-center space-y-12">
                 <div className="w-full text-center flex justify-center">
                     <Image src="/avatar.webp" alt="me" height="172" width="172" className="select-none"></Image>
@@ -60,7 +57,6 @@ export default function Home() {
                     </svg>
                 </a>
             </div>
-
-        </div>
+        </>
     )
 }
