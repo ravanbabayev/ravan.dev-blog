@@ -5,7 +5,7 @@ export default function Home() {
         <>
             <div className="flex flex-col text-center justify-center lg:space-y-12">
                 <div className="w-full text-center flex justify-center">
-                    <img src="https://storage.epincms.com/ravan/avatar.webp" style="height: 172px; width: 172px;" alt="Ravan Babayev" className="select-none"/>
+                    <img src="https://storage.epincms.com/ravan/avatar.webp" alt="Ravan Babayev" className="select-none h-[172px] w-[172px]"/>
                 </div>
                 <div className="space-y-8 lg:w-6/12 mx-auto">
                     <h3 className="text-gray-400 text-xl leading-snug uppercase robotoMono">Ravan Babayev</h3>
