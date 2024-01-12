@@ -5,11 +5,11 @@ export default function Home() {
         <>
             <div className="flex flex-col text-center justify-center lg:space-y-12">
                 <div className="w-full text-center flex justify-center">
-                    <Image src="/avatar.webp" alt="me" height="172" width="172" className="select-none"></Image>
+                    <img src="https://storage.epincms.com/ravan/avatar.webp" style="height: 172px; width: 172px;" alt="Ravan Babayev" className="select-none"/>
                 </div>
                 <div className="space-y-8 lg:w-6/12 mx-auto">
                     <h3 className="text-gray-400 text-xl leading-snug uppercase robotoMono">Ravan Babayev</h3>
-                    <h1 className="title">FULLSTACK DEVELOPER</h1>
+                    <h1 className="title">backend engineer</h1>
                 </div>
                 <div className="pt-16">
                     <a href="http://api.whatsapp.com/send?phone=905397312328" target="_blank" rel="noreferrer"
