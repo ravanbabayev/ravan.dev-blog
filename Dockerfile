@@ -1,15 +1,20 @@
+# Base image olarak Node.js kullanın
 FROM node:18-alpine
 
+# Çalışma dizinini /app olarak ayarlayın
 WORKDIR /app
 
-COPY package.json ./
+# package.json ve package-lock.json'ı kopyalayın
+COPY package*.json ./
 
+# Bağımlılıkları yükleyin
 RUN npm install
 
+# Projenizi kopyalayın
 COPY . .
 
+# Üretim için build yapın
 RUN npm run build
 
-COPY .next ./.next
-
-CMD ["npm", "run", "dev"]
+# Uygulamayı başlatın
+CMD ["npm", "start"]
