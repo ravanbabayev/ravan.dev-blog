@@ -8,7 +8,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Bağımlılıkları yükleyin
-RUN npm install
+RUN npm install --production
 
 # Projenizi kopyalayın
 COPY . .
