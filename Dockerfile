@@ -16,5 +16,7 @@ COPY . .
 # Üretim için build yapın
 RUN npm run build
 
+EXPOSE 3000
+
 # Uygulamayı başlatın
 CMD ["npm", "start"]
