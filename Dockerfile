@@ -1,5 +1,5 @@
 # Base image olarak Node.js kullanın
-FROM node:18-alpine
+FROM node:alpine
 
 # Çalışma dizinini /app olarak ayarlayın
 WORKDIR /app
