@@ -11,7 +11,7 @@ RUN npm install --global pm2
 COPY package*.json ./
 
 # Bağımlılıkları yükleyin
-RUN npm install --production
+RUN npm install
 
 # Projenizi kopyalayın
 COPY . .
