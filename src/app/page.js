@@ -14,7 +14,7 @@ export default function Home() {
                     <h1 className="title">software engineer</h1>
                     <p className="text-gray-300 text-base mt-4">
                       Modern web teknolojileriyle kullanıcı odaklı ve performanslı uygulamalar geliştiriyorum. Takım çalışmasına yatkın, sürekli öğrenmeye açık bir yazılım geliştiricisiyim. 
-                      <a href="/about" className="text-blue-400 hover:underline ml-2 robotoMono">Devamını oku →</a>
+                      <a href="/blog/ravan-babayev" className="text-blue-400 hover:underline ml-2 robotoMono">Devamını oku →</a>
                     </p>
                     <TechStack />
                     <div className="pt-8">
@@ -81,6 +81,20 @@ export default function Home() {
             </div>
 
             <div className="absolute top-8 right-16 space-x-6">
+                <a href="/blog" className="inline-flex items-center space-x-1">
+                    <span className="robotoMono text-white uppercase">Blog</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" className="h-5 w-5 text-white">
+                        <path fill="none" d="M0 0h256v256H0z"/>
+                        <path
+                            fill="none"
+                            stroke="currentColor"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={16}
+                            d="M64 192 192 64M88 64h104v104"
+                        />
+                    </svg>
+                </a>
                 <a href="/projects" className="inline-flex items-center space-x-1">
                     <span className="robotoMono text-white uppercase">Projeler</span>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" className="h-5 w-5 text-white">
