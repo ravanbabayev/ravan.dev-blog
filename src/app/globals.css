@@ -13,7 +13,7 @@
     }
 
     .title {
-        @apply uppercase text-5xl lg:text-[7rem] interTight leading-[80%] text-white font-extrabold;
+        @apply uppercase text-5xl lg:text-[7rem] interTight leading-tight lg:leading-[0.9] text-white font-extrabold;
     }
 
 }

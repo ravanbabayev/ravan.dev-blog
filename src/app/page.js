@@ -31,7 +31,7 @@ export default function Home() {
                 </div>
                 <div className="space-y-6 lg:space-y-8 lg:w-6/12 mx-auto">
                     <h3 className="text-gray-400 text-lg sm:text-xl leading-snug uppercase robotoMono">Ravan Babayev</h3>
-                    <h1 className="title text-3xl sm:text-4xl lg:text-[7rem] uppercase interTight leading-[80%] text-white font-extrabold">software engineer</h1>
+                    <h1 className="title text-3xl sm:text-4xl lg:text-[7rem] uppercase interTight leading-tight lg:leading-[0.9] text-white font-extrabold">software engineer</h1>
                     <p className="text-gray-300 text-sm sm:text-base mt-4 px-2 lg:px-0">
                       Modern web teknolojileriyle kullanıcı odaklı ve performanslı uygulamalar geliştiriyorum. Takım çalışmasına yatkın, sürekli öğrenmeye açık bir yazılım geliştiricisiyim. 
                       <a href="/blog/ravan-babayev" className="text-blue-400 hover:underline ml-2 robotoMono">Devamını oku →</a>
@@ -64,7 +64,6 @@ export default function Home() {
                             </svg>
                         </a>
                     </div>
-                    <a href="/about" className="inline-block mt-4 px-4 py-2 sm:px-6 sm:py-2 rounded-full bg-gray-800 text-gray-100 hover:bg-gray-700 transition-colors robotoMono text-sm sm:text-base uppercase tracking-wide">Hakkımda</a>
                 </div>
                 
                 {/* Projeler Bölümü */}
