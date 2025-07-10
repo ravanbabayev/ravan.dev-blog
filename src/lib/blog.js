@@ -7,20 +7,20 @@ const blogDirectory = path.join(process.cwd(), 'src/data/blog');
 
 // MDX için custom components
 const components = {
-  h1: (props) => <h1 className="text-3xl font-bold text-white mb-6 mt-8" {...props} />,
-  h2: (props) => <h2 className="text-2xl font-bold text-white mb-4 mt-8" {...props} />,
-  h3: (props) => <h3 className="text-xl font-bold text-white mb-3 mt-6" {...props} />,
-  h4: (props) => <h4 className="text-lg font-semibold text-white mb-2 mt-4" {...props} />,
-  p: (props) => <p className="text-gray-300 mb-4 leading-relaxed" {...props} />,
-  ul: (props) => <ul className="text-gray-300 mb-4 ml-6 list-disc" {...props} />,
-  ol: (props) => <ol className="text-gray-300 mb-4 ml-6 list-decimal" {...props} />,
-  li: (props) => <li className="mb-1" {...props} />,
+  h1: (props) => <h1 className="text-2xl sm:text-3xl font-bold text-white mb-4 sm:mb-6 mt-6 sm:mt-8" {...props} />,
+  h2: (props) => <h2 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4 mt-6 sm:mt-8" {...props} />,
+  h3: (props) => <h3 className="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3 mt-4 sm:mt-6" {...props} />,
+  h4: (props) => <h4 className="text-base sm:text-lg font-semibold text-white mb-2 mt-3 sm:mt-4" {...props} />,
+  p: (props) => <p className="text-gray-300 mb-3 sm:mb-4 leading-relaxed text-sm sm:text-base" {...props} />,
+  ul: (props) => <ul className="text-gray-300 mb-3 sm:mb-4 ml-4 sm:ml-6 list-disc text-sm sm:text-base" {...props} />,
+  ol: (props) => <ol className="text-gray-300 mb-3 sm:mb-4 ml-4 sm:ml-6 list-decimal text-sm sm:text-base" {...props} />,
+  li: (props) => <li className="mb-1 leading-relaxed" {...props} />,
   strong: (props) => <strong className="text-white font-semibold" {...props} />,
   em: (props) => <em className="text-gray-200 italic" {...props} />,
-  code: (props) => <code className="text-blue-300 bg-gray-800 px-1 py-0.5 rounded text-sm" {...props} />,
-  pre: (props) => <pre className="bg-gray-900 border border-gray-700 rounded-lg p-4 mb-6 overflow-x-auto" {...props} />,
-  blockquote: (props) => <blockquote className="border-l-4 border-blue-500 pl-6 italic text-gray-300 mb-6" {...props} />,
-  hr: (props) => <hr className="border-gray-700 my-8" {...props} />,
+  code: (props) => <code className="text-blue-300 bg-gray-800 px-1 py-0.5 rounded text-xs sm:text-sm" {...props} />,
+  pre: (props) => <pre className="bg-gray-900 border border-gray-700 rounded-lg p-3 sm:p-4 mb-4 sm:mb-6 overflow-x-auto text-xs sm:text-sm" {...props} />,
+  blockquote: (props) => <blockquote className="border-l-4 border-blue-500 pl-4 sm:pl-6 italic text-gray-300 mb-4 sm:mb-6 text-sm sm:text-base" {...props} />,
+  hr: (props) => <hr className="border-gray-700 my-6 sm:my-8 mb-6 sm:mb-8" {...props} />,
   a: (props) => <a className="text-blue-400 hover:text-blue-300 underline" {...props} />,
 };
 

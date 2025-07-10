@@ -5,25 +5,45 @@ import ProjectCard from '../components/ProjectCard'
 export default function Home() {
     return (
         <>
-            <div className="flex flex-col text-center justify-center lg:space-y-12">
-                <div className="w-full text-center flex justify-center">
-                    <img src='avatar.png' alt="Ravan Babayev" className="select-none h-[172px] w-[172px]"/>
+            {/* Mobil Navigasyon */}
+            <div className="lg:hidden fixed top-0 left-0 right-0 z-50 bg-[#13161B]/95 backdrop-blur-sm border-b border-gray-800">
+                <div className="flex justify-center items-center py-4 px-4">
+                    <div className="flex space-x-4 text-xs">
+                        <a href="/blog" className="inline-flex items-center space-x-1 text-white hover:text-blue-400 transition-colors">
+                            <span className="robotoMono uppercase">Blog</span>
+                        </a>
+                        <a href="/projects" className="inline-flex items-center space-x-1 text-white hover:text-blue-400 transition-colors">
+                            <span className="robotoMono uppercase">Projeler</span>
+                        </a>
+                        <a href="https://github.com/ravanbabayev" className="inline-flex items-center space-x-1 text-white hover:text-blue-400 transition-colors" target="_blank">
+                            <span className="robotoMono uppercase">Github</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ravanbabayev/" className="inline-flex items-center space-x-1 text-white hover:text-blue-400 transition-colors" target="_blank">
+                            <span className="robotoMono uppercase">LinkedIn</span>
+                        </a>
+                    </div>
                 </div>
-                <div className="space-y-8 lg:w-6/12 mx-auto">
-                    <h3 className="text-gray-400 text-xl leading-snug uppercase robotoMono">Ravan Babayev</h3>
-                    <h1 className="title">software engineer</h1>
-                    <p className="text-gray-300 text-base mt-4">
+            </div>
+
+            <div className="min-h-screen flex flex-col text-center justify-center px-4 py-8 lg:py-0 lg:space-y-12 pt-20 lg:pt-0">
+                <div className="w-full text-center flex justify-center">
+                    <img src='avatar.png' alt="Ravan Babayev" className="select-none h-32 w-32 sm:h-40 sm:w-40 lg:h-[172px] lg:w-[172px]"/>
+                </div>
+                <div className="space-y-6 lg:space-y-8 lg:w-6/12 mx-auto">
+                    <h3 className="text-gray-400 text-lg sm:text-xl leading-snug uppercase robotoMono">Ravan Babayev</h3>
+                    <h1 className="title text-3xl sm:text-4xl lg:text-[7rem] uppercase interTight leading-[80%] text-white font-extrabold">software engineer</h1>
+                    <p className="text-gray-300 text-sm sm:text-base mt-4 px-2 lg:px-0">
                       Modern web teknolojileriyle kullanıcı odaklı ve performanslı uygulamalar geliştiriyorum. Takım çalışmasına yatkın, sürekli öğrenmeye açık bir yazılım geliştiricisiyim. 
                       <a href="/blog/ravan-babayev" className="text-blue-400 hover:underline ml-2 robotoMono">Devamını oku →</a>
                     </p>
                     <TechStack />
-                    <div className="pt-8">
+                    <div className="pt-6 lg:pt-8">
                         <a href="http://api.whatsapp.com/send?phone=908508886436" target="_blank" rel="noreferrer"
-                           className="px-8 py-3 rounded-full inline-flex justify-center items-center space-x-2 transition-all group select-none ring-0 hover:ring-4 duration-200 lg:px-16 lg:py-6 lg:hover:ring-8 bg-blue-500 ring-blue-300">
+                           className="px-6 py-3 sm:px-8 sm:py-3 lg:px-16 lg:py-6 rounded-full inline-flex justify-center items-center space-x-2 transition-all group select-none ring-0 hover:ring-4 duration-200 lg:hover:ring-8 bg-blue-500 ring-blue-300">
                         <span className="text-sm leading-6 font-semibold lg:text-2xl lg:leading-8 text-white">
                             Say hellooo
                         </span>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" className="h-6 w-6 text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" className="h-5 w-5 lg:h-6 lg:w-6 text-white">
                                 <path fill="none" d="M0 0H256V256H0z"></path>
                                 <path
                                     fill="none"
@@ -44,13 +64,13 @@ export default function Home() {
                             </svg>
                         </a>
                     </div>
-                    <a href="/about" className="inline-block mt-4 px-6 py-2 rounded-full bg-gray-800 text-gray-100 hover:bg-gray-700 transition-colors robotoMono text-base uppercase tracking-wide">Hakkımda</a>
+                    <a href="/about" className="inline-block mt-4 px-4 py-2 sm:px-6 sm:py-2 rounded-full bg-gray-800 text-gray-100 hover:bg-gray-700 transition-colors robotoMono text-sm sm:text-base uppercase tracking-wide">Hakkımda</a>
                 </div>
                 
                 {/* Projeler Bölümü */}
-                <div className="w-full max-w-6xl mx-auto mt-16 px-4">
-                    <h2 className="text-3xl font-bold text-center mb-8 text-white">Öne Çıkan Projeler</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                <div className="w-full max-w-6xl mx-auto mt-12 lg:mt-16 px-4">
+                    <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 lg:mb-8 text-white">Öne Çıkan Projeler</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-6 lg:mb-8">
                         <ProjectCard
                             title="EPINCMS"
                             technologies={["SaaS", "E-commerce", "Digital Products"]}
@@ -71,16 +91,15 @@ export default function Home() {
                         />
                     </div>
                     <div className="text-center">
-                        <a href="/projects" className="inline-block px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-colors robotoMono">
+                        <a href="/projects" className="inline-block px-6 py-3 sm:px-8 sm:py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-colors robotoMono text-sm sm:text-base">
                             Tüm Projeleri Gör
                         </a>
                     </div>
                 </div>
-
-
             </div>
 
-            <div className="absolute top-8 right-16 space-x-6">
+            {/* Desktop Navigasyon */}
+            <div className="hidden lg:block absolute top-8 right-16 space-x-6">
                 <a href="/blog" className="inline-flex items-center space-x-1">
                     <span className="robotoMono text-white uppercase">Blog</span>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" className="h-5 w-5 text-white">

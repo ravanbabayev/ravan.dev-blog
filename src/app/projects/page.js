@@ -28,10 +28,10 @@ const projects = [
 
 export default function Projects() {
   return (
-    <div className="min-h-screen bg-[#13161B] text-white py-16 px-4">
+    <div className="min-h-screen bg-[#13161B] text-white py-8 sm:py-16 px-4">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-4xl font-bold text-center mb-6">Ana Sayfadaki Projeler</h1>
-        <div className="text-center mb-10">
+        <h1 className="text-3xl sm:text-4xl font-bold text-center mb-4 sm:mb-6">Ana Sayfadaki Projeler</h1>
+        <div className="text-center mb-8 sm:mb-10">
           <Link href="/" className="inline-flex items-center space-x-2 text-blue-400 hover:text-blue-300 transition-colors robotoMono text-sm">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" className="h-4 w-4 rotate-180">
               <path fill="none" d="M0 0H256V256H0z"/>
@@ -42,7 +42,7 @@ export default function Projects() {
           </Link>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {projects.map((project, index) => (
             <ProjectCard
               key={index}
